@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+    function summ(a, b){
+            return Number(a) + Number(b)
+        }
+
+    function diff(a, b){
+            return Number(a) - Number(b)
+        }
+
+    function multiplication(a, b){
+            return Number(a) * Number(b)
+        }
+
+    function division(a, b){
+            return Number(a) / Number(b)
+        }
+    
+    let a = Number(prompt('Введите число - первый операнд'))
+    let b = Number(prompt('Введите число - первый операнд'))
+    let o = prompt('Введите название арфмитической операции - сложение/вычитание/умножение/деление')
+        
+    function mathOperation(arg1, arg2, operation){
+            switch (operation) {
+                case 'сложение':
+                    return summ(arg1, arg2)
+                    break
+                case 'вычитание':
+                    return diff(arg1, arg2)
+                    break
+                case 'умножение':
+                    return multiplication(arg1, arg2)
+                    break
+                case 'деление':
+                    return division(arg1, arg2)
+                    break
+                default: 
+                    return('Неизвестная операция')
+            }
+         }
+    
+    let result = mathOperation(a, b, o)
+    document.write(result)
+        
+
+        
+
+
+
+
+    
+
+    </script>
+
+
+</body>
+</html>
