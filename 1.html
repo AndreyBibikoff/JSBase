@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        function digit(num) {
+            let arr = []
+            if (!Number.isInteger(num) || Number(num) < 0 || Number(num) > 999)
+                document.write('Error! Жду целое число от 0 до 999')
+            else 
+                 num2 = String(num )
+                 arr = num2.split('')
+                 return {
+                    целые : arr[2],
+                    десятки : arr[1],
+                    сотни : arr[0],
+
+                 }
+        }
+            
+  
+        let num = Number(prompt('Введите целое число от 0 до 999'))
+        console.log(digit(num))
+    
+    </script>
+
+
+</body>
+</html>

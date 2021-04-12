@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        const basket = {
+            products : [ {
+            id: 1,
+            name: 'Наушники',  
+            quantity: 1,
+            price: 1500,
+            },
+            {
+            id: 2,
+            name: 'Роутер Mikrotik',  
+            quantity: 1,
+            price: 6200,
+            },
+            {
+            id:3,
+            name: 'Коннектор RJ-45',  
+            quantity: 60,
+            price: 6,
+            },
+        ],    
+        
+        
+        basketFullPrice() {
+            return this.products.reduce((totalPrice, id) => totalPrice + id.price * id.quantity, 0);
+            },
+        }
+        
+
+
+        document.write(basket.basketFullPrice()) 
+    
+
+    </script>
+
+</body>
+</html>
